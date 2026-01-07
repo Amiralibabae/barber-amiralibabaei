@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>نوبت دهی آرایشگاه</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="card">
+  <h1>✂️ به آرایشگاه الماس خوش آمدید</h1>
+  <p class="subtitle">رزرو آنلاین نوبت</p>
+
+  <input type="text" id="fullname" placeholder="نام و نام خانوادگی">
+  <input type="tel" id="phone" placeholder="شماره تلفن">
+
+  <select id="day">
+    <option value="">انتخاب روز هفته</option>
+    <option>شنبه</option>
+    <option>یکشنبه</option>
+    <option>دوشنبه</option>
+    <option>سه‌شنبه</option>
+    <option>چهارشنبه</option>
+    <option>پنجشنبه</option>
+    <option>جمعه</option>
+  </select>
+
+  <div id="times" class="times"></div>
+
+  <button onclick="confirmAppointment()">تأیید نوبت</button>
+
+  <div id="result" class="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
